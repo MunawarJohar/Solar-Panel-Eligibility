@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panel Eligibility Check</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>See if You Qualify for No Upfront Cost Solar Panels Today!</h1>
+            <p>Upgrade your home, save on energy bills, and contribute to a sustainable future. Find out if you qualify in just a few minutes.</p>
+            <button class="cta-button animated-button">Get Started</button>
+        </div>
+    </header>
+
+    <!-- Eligibility Checklist -->
+    <section id="eligibility">
+        <div class="container">
+            <h2 class="fade-in">Eligibility Checklist</h2>
+            <ul>
+                <li><span class="badge">1</span> Must own the home.</li>
+                <li><span class="badge">2</span> 650+ credit score.</li>
+                <li><span class="badge">3</span> Roof must have composite shingles or concrete tiles.</li>
+                <li><span class="badge">4</span> Current electricity bill over $200.</li>
+                <li><span class="badge">5</span> At least 12 hours of direct sunlight accessible from the roof.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Information Collection Form -->
+    <section id="form">
+        <div class="container">
+            <h2>Get Started</h2>
+            <form action="submit.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="bill">Upload Your Electricity Bill (PDF):</label>
+                    <input type="file" id="bill" name="bill" accept=".pdf" required>
+                </div>
+                <button type="submit" class="animated-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Appointment Booking -->
+    <section id="appointment">
+        <div class="container">
+            <h2>Schedule Your Follow-Up Call</h2>
+            <a href="https://calendly.com/your-link" target="_blank" class="cta-button animated-button">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Solar Panel Eligibility Check. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
